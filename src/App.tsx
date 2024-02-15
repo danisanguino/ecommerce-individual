@@ -1,14 +1,20 @@
 import './App.css'
-import Signin from "./pages/Signin"
+import {BrowserRouter,Router, Route,NavLink} from "react-router-dom"
+import Routes from './pages/routes'
+
+
+
+
+
 
 function App() {
 
-
   return (
     <>
-      <Signin/>
+      <Routes/>
     </>
   )
 }
 
 export default App
+ 

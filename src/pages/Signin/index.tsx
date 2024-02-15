@@ -1,10 +1,10 @@
-import Header from "../../components/Header"
+import Header from "../../components/header"
 import Login from "./components/Login"
 import Welcome from "./components/Welcome"
 
 type Props = {}
 
-export default function index({}: Props) {
+export default function Signin({}: Props) {
   return (
     <>
     <Header/>
