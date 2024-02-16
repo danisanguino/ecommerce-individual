@@ -1,10 +1,11 @@
 import React from 'react'
 import "./catalogBanner.css"
+import { Link } from 'react-router-dom';
 
 type Props = {}
 
 function goCatalogue (){
-
+    
 }
 
 export default function CatalogBanner({}: Props) {
@@ -12,8 +13,8 @@ export default function CatalogBanner({}: Props) {
     <div className='welcome-banner'>
       
       <div className='welcome-txt-btn'>
-        <h1>See our catalogue</h1>
-        <button onSubmit={goCatalogue}>Catalogue</button>
+        <h1>Sorpréndete</h1>
+        <Link to="/catalog"><button>Catalogo</button></Link>
     </div>
 
     </div>

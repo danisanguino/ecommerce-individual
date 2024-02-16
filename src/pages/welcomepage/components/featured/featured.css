@@ -1,17 +1,30 @@
+html {
+    background-color: white;
+}
+
 .featured {
     background-color: var(--green-primary);
-    height: 70px;
-    color: white;
+    height: 4.375rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .featured h3 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
+    color: white;
 }
 
-.featured-products {
+.featured-products, .catalog-products{
     background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 3.425rem;
+
 }
+

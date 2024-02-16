@@ -1,13 +1,9 @@
-body {
-    background-color: var(--green-primary);
-}
-
-h2 {
-    background-color: transparent;
+.login h2 {
     text-align: center;
     padding: 1rem;
     font-weight: 400;
     font-size: 1.875rem;
+    color: white;
 }
 
 .login {
@@ -26,7 +22,7 @@ h2 {
 }
 
 .login input {
-    width: 18.75rem;
+    min-width: 18.75rem;
     border: none;
     color: var(--grey-primary);
     padding: 0.5rem;

@@ -1,6 +1,10 @@
 .card-product{
-    width: 50%;
+    width: 200px;
     position: relative;
+
+}
+
+a {
     text-decoration: none;
 }
 
@@ -14,9 +18,14 @@
     right: 5px;
 }
 
-.card-product img {
-    width: 80%;
+.img-product-thumbnail {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
 
+.card-product img {
+    width: 60%;
 }
 
 .card-product h4 {

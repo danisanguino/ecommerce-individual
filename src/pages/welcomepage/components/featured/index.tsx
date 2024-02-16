@@ -7,10 +7,11 @@ type Props = {}
 export default function Featured({}: Props) {
   return (
     <>
+    
     <div className='featured'>
-      <h3>HighLights</h3>
-      
+      <h3>Destacados</h3>
     </div>
+
     <div className='featured-products'>
     <CardProduct/>
     <CardProduct/>

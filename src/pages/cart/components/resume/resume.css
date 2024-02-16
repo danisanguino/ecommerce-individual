@@ -1,0 +1,27 @@
+.resume {
+    background-color: white;
+    padding: 5rem 1rem 3.125rem 1rem;
+}
+
+.resume h2 {
+    font-size: 2rem ;
+    font-weight: 400;
+    padding: 1rem 0 1rem 0;
+}
+
+.resume .resume-cart {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 0 0.7rem 0;
+}
+
+.resume .resume-cart-total {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .img-logo-resume {
+    text-align: center;
+}
