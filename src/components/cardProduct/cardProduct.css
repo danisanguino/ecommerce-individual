@@ -1,15 +1,16 @@
 .card-product{
-    width: 200px;
+    width: 12.5rem;
     position: relative;
-
-}
-
-a {
     text-decoration: none;
 }
 
 .card-product:visited {
     text-decoration: none;
+}
+
+.card-product .img-product-thumbnail {
+    display: flex;
+    justify-content: center;
 }
 
 .card-product .wish-btn{
@@ -18,14 +19,9 @@ a {
     right: 5px;
 }
 
-.img-product-thumbnail {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-}
-
 .card-product img {
-    width: 60%;
+    width: 50%;
+
 }
 
 .card-product h4 {
@@ -33,6 +29,7 @@ a {
     font-weight: 500;
     text-align: center;
     color: var(--grey-primary);
+    text-decoration: none;
 }
 
 .card-product p {
@@ -41,4 +38,5 @@ a {
     text-align: center;
     color: var(--green-secondary);
 }
+
 

@@ -6,13 +6,14 @@ type Props = {}
 
 export default function Resume({}: Props) {
   return (
+    
     <div className='resume'>
-    <h2>3 Productos</h2>
+    <h2>1 Producto</h2>
 
     <ProductCart/>
 
     <div className='resume-cart'>
-      <p>Subtotal</p> <p><strong>1.967 €</strong></p>
+      <p>Subtotal</p> <p><strong>325 €</strong></p>
     </div>
 
     <div className='resume-cart'>
@@ -20,7 +21,7 @@ export default function Resume({}: Props) {
     </div>
 
     <div className='resume-cart-total'>
-      <p>TOTAL A PAGAR</p> <p><strong>1.967 €</strong></p>
+      <p>TOTAL A PAGAR</p> <p><strong>325 €</strong></p>
     </div>
 
     <div className='img-logo-resume'>

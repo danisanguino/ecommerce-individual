@@ -77,7 +77,7 @@ const Login = (props: Props) => {
       <form className='form-login' onSubmit={loginForm}>
         <input type="email" name="mail" placeholder='email' className="user-icon" required />
         <input type="password" name="pass" placeholder='Password' className="pass-icon" required />
-        <button type="submit" className="button">Entrar</button>
+        <button type="submit" className="button">Enter</button>
       </form>
 
       <div className='img-logo'>

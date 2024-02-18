@@ -4,10 +4,6 @@ import { Link } from 'react-router-dom';
 
 type Props = {}
 
-function goCatalogue (){
-    
-}
-
 export default function CatalogBanner({}: Props) {
   return (
     <div className='welcome-banner'>

@@ -7,7 +7,7 @@ export default function ProductDescription({}: Props) {
   return (
     <>
     <div className='img-product'>
-      <img src="src/assets/products/silla-01-forniture.webp" alt="imagen principal" height={"400px"}/>
+      <img src="src/assets/products/silla-01-forniture.webp" alt="imagen principal" height={"350px"}/>
     </div>
 
     <div className="description-product">
@@ -18,7 +18,7 @@ export default function ProductDescription({}: Props) {
     </div>
 
     <div className='add-cart'>
-      <button className='btn-add-cart'><img src="src/assets/cat-btn-icon.svg" alt="comprar" />Añadir a Cesta</button>
+      <button className='btn-add-cart'><img src="src/assets/cart-btn-icon.svg" alt="comprar" />Añadir a Cesta</button>
     </div>
     </>
   )

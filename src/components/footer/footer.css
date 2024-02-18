@@ -16,8 +16,9 @@
 
 .footer .wish-cart-btn {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-right: 1rem;
+    margin-top: 0.40rem;
 }
 
 .footer img {

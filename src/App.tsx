@@ -1,5 +1,10 @@
 import './App.css'
+import {BrowserRouter,Router, Route,NavLink} from "react-router-dom"
 import Routes from './pages/routes'
+
+
+
+
 
 
 function App() {

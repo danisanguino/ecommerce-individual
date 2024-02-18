@@ -5,7 +5,7 @@ type Props = {}
 export default function Welcome({}: Props) {
   return (
     <div className='welcome'>
-    <h1>Bienvenido Furniture 742 LTD.</h1>    
+    <h1>Bienvenidos Furniture 742 LTD.</h1>    
     </div>
   )
 }
