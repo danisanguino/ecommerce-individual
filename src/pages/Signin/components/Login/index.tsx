@@ -55,15 +55,12 @@ const Login = (props: Props) => {
     // Comparar 
     if (userFound) {
       setUser(user);
-      alert("Bien coone");
-      //   //recoger los datos del usuario
-
       // pasar a la siguiente pagina
       navigate("/welcome")
 
 
     } else {
-      alert("Oooooooooooh");
+      alert("Usuario incorrecto. Pruebe de nuevo.");
     }
   };
 
@@ -77,7 +74,7 @@ const Login = (props: Props) => {
       <form className='form-login' onSubmit={loginForm}>
         <input type="email" name="mail" placeholder='email' className="user-icon" required />
         <input type="password" name="pass" placeholder='Password' className="pass-icon" required />
-        <button type="submit" className="button">Enter</button>
+        <button type="submit" className="button">Entrar</button>
       </form>
 
       <div className='img-logo'>

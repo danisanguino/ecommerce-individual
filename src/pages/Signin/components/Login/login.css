@@ -2,12 +2,13 @@ body {
     background-color: var(--green-primary);
 }
 
-h2 {
+.login h2 {
     background-color: transparent;
     text-align: center;
     padding: 1rem;
     font-weight: 400;
     font-size: 1.875rem;
+    color: white;
 }
 
 .login {
