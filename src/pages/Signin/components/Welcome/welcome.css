@@ -1,0 +1,11 @@
+.welcome {
+    text-align: center;
+    height: 50vh;
+    background-image: url("src/assets/bg-742.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}

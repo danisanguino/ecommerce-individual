@@ -1,0 +1,20 @@
+.product-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.7rem;
+    border: 1px solid var(--grey-secondary);
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.product-cart .resume-product {
+    display: flex;          
+    align-items: center;
+    gap:0.5rem
+}
+
+.product-cart .resume-product h2 {
+    font-size: 1.55rem;
+    font-weight: 600;
+    padding: 0;
+}

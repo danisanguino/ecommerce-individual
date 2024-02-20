@@ -1,0 +1,42 @@
+html {
+    background-color: white;
+}
+
+.featured {
+    background-color: var(--green-primary);
+    height: 4.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured h3 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: white;
+}
+
+.featured-products{
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.425rem;
+}
+
+.catalog-products{
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3.425rem;
+
+}
+
+
