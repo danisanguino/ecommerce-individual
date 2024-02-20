@@ -1,0 +1,73 @@
+[
+    {
+    "id": "1",
+    "Class": "silla",
+    "Highlight": true,
+    "Name": "Silla Dave",
+    "Description": "El colorido diseño de esta silla con estampado patchwork llama la atención de inmediato. La elegante cubierta de tela complementa el suave y cómodo asiento de espuma y rápidamente convertirá la silla en su nuevo lugar favorito para sentarse. Los apoyabrazos cerrados ofrecen comodidad adicional.",
+    "Price": 250,
+    "Meassures": "Ancho 46 cm, Alto 82 cm, Fondo 52 cm",
+    "Material": "Plástico y madera",
+    "Image": "src/assets/products/silla-01-forniture.webp"
+    },
+
+    {
+    "id": "2",
+    "Class": "silla",
+    "Highlight": false,
+    "Name": "Silla Dalye Terciopelo",
+    "Description": "Nuestra Silla Dalye Terciopelo es elegancia, modernidad, comodidad y sofisticación. ¡Todo en uno! Se trata de una silla cuya estructura está fabricada en acero reforzado, con las patas lacadas en color negro. Su asiento está forrado con terciopelo.",
+    "Price": 425,
+    "Meassures": "Ancho 55 cm, Alto 51 cm, Fondo 54 cm",
+    "Material": "Terciopelo y metal",
+    "Image": "src/assets/products/silla-02-forniture.webp"
+    },
+
+    {
+    "id": "3",
+    "Class": "mesa",
+    "Highlight": true,
+    "Name": "Mesa Nium 3 cajones",
+    "Description": "La mesa Nium de madera es una elegante pieza de mobiliario que combina funcionalidad y estilo. Confeccionada artesanalmente con madera de roble de alta calidad, su superficie presenta una textura suave y acabado natural que resalta la belleza de la madera.",
+    "Price": 475,
+    "Meassures": "Ancho 43 cm, Alto 46 cm, Fondo 30 cm",
+    "Material": "Madera",
+    "Image": "src/assets/products/mesa-01-forniture.webp"
+    },
+
+    {
+    "id": "4",
+    "Class": "mesa",
+    "Highlight": false,
+    "Name": "Mesa Lena 2 cajones",
+    "Description": "¿También sueñas con una gran oficina en casa? Podemos ayudarlo con muebles de oficina en el hogar como escritorios, sillas de oficina, unidades de pared, estantes y opciones de almacenamiento.",
+    "Price": 300,
+    "Meassures": "Ancho 100 cm, Alto 112 cm, Fondo 74 cm",
+    "Material": "Madera",
+    "Image": "src/assets/products/mesa-02-forniture.webp"
+    },
+
+    {
+    "id": "5",
+    "Class": "mueble",
+    "Highlight": true,
+    "Name": "Armario Gaffney",
+    "Description": "El aparador estrecho Gaffney posee dos espacios cerrados con puertas abatibles y dos estantes en la parte inferior. Sus puertas con efecto roble rayado le confieren una personalidad única.",
+    "Price": 550,
+    "Meassures": "Ancho 80 cm, Alto 140 cm, Fondo 40 cm",
+    "Material": "Madera",
+    "Image": "src/assets/products/mueble-01-forniture.webp"
+    },
+
+    {
+    "id": "6",
+    "Class": "mueble",
+    "Highlight": false,
+    "Name": "Aparador Chiffonnier",
+    "Description": "Añade carácter a tu salón con este precioso mueble de espíritu industrial. Su mezcla de madera y metal lo convierte en un mueble ultra moderno que irá bien con todo tipo de interior. Puedes completar tu mobiliario con otros muebles de la colección Factory.",
+    "Price": 715,
+    "Meassures": "Ancho 103 cm, Alto 80 cm, Fondo 40 cm",
+    "Material": "Madera",
+    "Image": "src/assets/products/mueble-02-forniture.webp"
+    }
+]

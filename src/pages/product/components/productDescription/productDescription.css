@@ -1,0 +1,49 @@
+/* html {
+    background-color: var(--green-quaternary);
+} */
+
+.img-product {
+    padding-top: 4.375rem;
+    background-color: white;
+    text-align: center;
+}
+
+.description-product {
+    background-color: var(--green-quaternary);
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2.31rem;
+    text-align: left;
+    color: var(--grey-primary);
+    padding: 0;
+}
+
+h3 {
+    font-size: 2rem ;
+    color: var(--green-secondary);
+}
+
+p {
+    color: var(--grey-primary);
+    line-height: 25px;
+}
+
+.add-cart {
+    background-color: var(--green-quaternary);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3.125rem;
+}
+
+.btn-add-cart {
+    background-color: var(--green-secondary);
+    border: none;
+    font-size: 1.25rem;
+    padding: 0.7rem 2rem 0.7rem 1rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+}
