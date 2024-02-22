@@ -16,24 +16,24 @@ export default function displayCatalogFurnitures({}: Props) {
     <>
     <Header/>
     <Filter/>
-    <div className='catalog-products'>
-      
-      {productsFromArray.array.filter(product => product.Class === "mueble").map((product) => { 
-                return (
-                  <CardProduct
-                  key={product.id}
-                  id={product.id}
-                  img={product.Image}
-                  name={product.Name}
-                  price={product.Price}
-                  highlight={product.Highlight}
-                  class={product.Class}
-                  />
-                )}
-              )
-            }
-          
-    </div>
+      <div className='catalog-products'>
+        
+        {productsFromArray.array.filter(product => product.Class === "mueble").map((product) => { 
+                  return (
+                    <CardProduct
+                    key={product.id}
+                    id={product.id}
+                    img={product.Image}
+                    name={product.Name}
+                    price={product.Price}
+                    highlight={product.Highlight}
+                    class={product.Class}
+                    />
+                  )}
+                )
+              }
+            
+      </div>
     <Footer/>
     </>
   )

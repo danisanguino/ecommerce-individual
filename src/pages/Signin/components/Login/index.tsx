@@ -1,8 +1,9 @@
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { Main } from '../../../../interfaces/users';
 import './login.css';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { userFornitureContext } from '../../../../context/user';
+import { useAuthDispatch } from '../../../../context/authContext';
 
 type Props = {};
 
@@ -34,34 +35,43 @@ export const Login = (props: Props) => {
     getUserDatasResponse();
   }, []);
 
+  const handleLogin = () => {
+    dispatch({type:"LOGGIN"});
+    navigate("/welcome")
+  }
+
 
   //Guardar los usuarios de la API 
   //Importar el custom hook
   const userContext = userFornitureContext();
 
-  const [user, setUser] = useState ([]);
+  // const [user, setUser] = useState ([]);
   
   const [JSONuser, setJSONuser] = useState ([]as Main[]); 
+
+  const [userData, setUserData] = useState ({mail:"", pass:""});
+
+  const dispatch = useAuthDispatch();
 
   //llamar al useNavigate
   const navigate = useNavigate();
 
   // Obtener datos formulario
-  const loginForm = (e) => {
+  const loginForm = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const userDatas = e.target; // coge los datos del evento que en este caso es un formulario
-    const mailUser = userDatas.mail.value;
-    const passUser = userDatas.pass.value;
+    // const userDatas = e.target; // coge los datos del evento que en este caso es un formulario
+    // const mailUser = userDatas.mail.value;
+    // const passUser = userDatas.pass.value;
+
+    const {mail, pass} = userData
 
     //Coge los datos del JSON y 
-    const userFound = JSONuser.find((element) => element.email === mailUser && element.password === passUser)
+    const userFound = JSONuser.find((element) => element.email === mail && element.password === pass)
 
 
     // Comparar 
     if (userFound) {
-      setUser(user);
-      // pasar a la siguiente pagina
-      navigate("/welcome")
+      handleLogin();
       //el usuario guardado AQUI para exportar
       userContext.setArray(userFound);
 
@@ -78,8 +88,8 @@ export const Login = (props: Props) => {
 
       {/* Form to access */}
       <form className='form-login' onSubmit={loginForm}>
-        <input type="email" name="mail" placeholder='email' className="user-icon" required />
-        <input type="password" name="pass" placeholder='Password' className="pass-icon" required />
+        <input type="email" name="mail" placeholder='email' className="user-icon" onChange={(e)=> setUserData({...userData, mail:e.target.value})} value={userData.mail} required />
+        <input type="password" name="pass" placeholder='Password' className="pass-icon" onChange={(e)=> setUserData({...userData, pass:e.target.value})} value={userData.pass} required />
         <button type="submit" className="button">Entrar</button>
       </form>
 
