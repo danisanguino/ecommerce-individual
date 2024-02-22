@@ -24,6 +24,8 @@ const productsFromArray = useFornitureContext();
    }
  }
 
+ 
+
  useEffect(() => {
    // API CALL function
    getProductsData();
@@ -36,8 +38,11 @@ const productsFromArray = useFornitureContext();
       <h3>Destacados</h3>
     </div>
 
+   
+
     <div className='featured-products'>
-      {productsFromArray.array.map((product) => { 
+     
+      {productsFromArray.array.filter(product => product.Highlight).map((product) => { 
                 return (
                   <CardProduct
                   key={product.id}
@@ -45,6 +50,7 @@ const productsFromArray = useFornitureContext();
                   img={product.Image}
                   name={product.Name}
                   price={product.Price}
+                  highlight={product.Highlight}
                   />
                 )}
               )

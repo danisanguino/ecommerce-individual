@@ -42,3 +42,7 @@ Pintar productos en catálogo sin usar el componente aún.
 20 febrero
 Pintar productos en componentes card y abrir cada uno detallado en su página.
 
+21 febrero
+Nombre del usuario logeado en el header de la app
+Ruta 404 si se escribe mal una ruta
+Filtrado por categorias

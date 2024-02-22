@@ -1,18 +1,37 @@
-import { createContext } from "react";
+import { createContext, useContext, useState } from "react";
+import { Main } from "../../interfaces/users";
+import { Outlet } from "react-router-dom";
 
-export const UserNameContext = createContext(null);
+export interface UserContextType {
+  array: Main
+  setArray: Function
+}
 
 
-export const UserProvider = ({children}) => {
+//Creando contexto
+const users = createContext({} as UserContextType);
 
-    const userData = {
-        Name: "Danielo Sanguino",
-        mail: "dani@gmail.com"
-      }    
 
-    return (
-      <UserNameContext.Provider value={userData.Name}>
-        {children}
-      </UserNameContext.Provider>
-    )
+
+//Creando el provider
+export const UserContextProvider = () => {
+
+  const [array, setArray] = useState({} as Main)
+
+  return (
+    <users.Provider value={{array, setArray}}>
+      {<Outlet/>}
+    </users.Provider>
+  )
+}
+
+
+// Crear el custom hook para poder usar el contexto en el componente que quieras
+export const userFornitureContext = () => {
+
+  const context = useContext(users)
+  if (!context) {
+      throw new Error ("Error")
   }
+  return context 
+}

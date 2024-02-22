@@ -6,10 +6,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .header .search{
     padding-left: 1rem;
+    cursor: pointer;
 }
 
 .header .nav-bar {

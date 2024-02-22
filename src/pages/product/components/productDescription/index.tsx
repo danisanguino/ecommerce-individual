@@ -12,10 +12,10 @@ export default function ProductDescription({}: Props) {
   const productsFromArray = useFornitureContext();
 
   const productShow = productsFromArray.array.find( (element) => {
-      console.log(typeof element.id, typeof productId )
+  
       return element.id === productId
   })
-  console.log(productShow)
+ 
 
   return (
     <>

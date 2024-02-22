@@ -1,4 +1,4 @@
-import { createContext, useState, FC, PropsWithChildren, useContext } from "react";
+import { createContext, useState, useContext } from "react";
 import { Main } from "../../interfaces/products";
 import { Outlet } from "react-router-dom";
 

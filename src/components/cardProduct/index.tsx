@@ -8,6 +8,8 @@ type Props = {
   img: string
   name: string
   price: number
+  highlight: boolean
+  class: string
   }
 
 export default function CardProduct(props: Props) {

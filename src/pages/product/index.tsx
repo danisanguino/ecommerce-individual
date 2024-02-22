@@ -8,10 +8,10 @@ type Props = {}
 
 export default function Product({}: Props) {
   return (
-    <>
+    <div className='product-bg'>
     <Header/>
     <ProductDescription/>
     <Footer/>
-    </>
+    </div>
   )
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import "./filter.css"
+import { Link, Navigate } from 'react-router-dom'
+import DisplayCatalogChairs from '../displayCatalogChairs'
 
 type Props = {}
 
@@ -12,10 +14,10 @@ export default function Filter({}: Props) {
     <div>Filtrar por:</div>
     <div className='filter'>
     <div className='filter-title'>Filtrar</div>
-      <button>Sillas</button>
-      <button>Mesas Escritorio</button>
-      <button>Muebles</button>
-      <button>Sofás</button>
+      <Link to="/catalogChairs"><button>Sillas</button></Link>
+      <Link to="/catalogTables"><button>Mesas</button></Link>
+      <Link to="/catalogFurnitures"><button>Muebles</button></Link>
+      <Link to="/catalogAll"><button>Todos</button></Link>
     </div>
     </>
   )

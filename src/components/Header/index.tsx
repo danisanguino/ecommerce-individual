@@ -1,23 +1,29 @@
 import { useContext } from 'react';
 import './header.css';
-import { UserNameContext } from '../../context/user';
+import { Link } from 'react-router-dom';
+import { userFornitureContext } from '../../context/user';
 
 
 type Props = {}
 
 export default function Header({}: Props) {
 
-  const userNameOnHeader = useContext(UserNameContext);
+  //Invocamos al custom Hook y guardamos el dato en una variable
+  const userContext = userFornitureContext();
+
 
   return (
     <div className="header">
 
         <div className="search">
-            <img src="src/assets/glass-742.svg" alt="search" />
+         <Link to="/welcome" >
+             <img src="src/assets/home-742.svg" alt="search" />
+        </Link>
         </div>
 
         <div className='nav-bar'>
-            <p>Hola {userNameOnHeader}</p>
+            {/* Llamamos a la variable que es igual al custom Hook */}
+            <p>Hola, {userContext.array.Name}</p>
             <img src="src/assets/person-742.svg" alt="user" />
             <img src="src/assets/menu-742.svg" alt="menu" /> 
         </div>

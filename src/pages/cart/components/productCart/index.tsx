@@ -1,5 +1,6 @@
 import React from 'react'
 import "./productCart.css"
+import { CgTrashEmpty } from "react-icons/cg";
 
 type Props = {}
 
@@ -18,7 +19,7 @@ export default function ProductCart({}: Props) {
       </div>
 
       <div className='delete-product'>
-        <p>Eliminar</p>
+        <p><CgTrashEmpty /></p>
       </div>
 
     </div>

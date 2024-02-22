@@ -2,10 +2,12 @@ import { useNavigate } from 'react-router-dom';
 import { Main } from '../../../../interfaces/users';
 import './login.css';
 import { useEffect, useState } from 'react';
+import { userFornitureContext } from '../../../../context/user';
 
 type Props = {};
 
-const Login = (props: Props) => {
+export const Login = (props: Props) => {
+
 
   //LLAMADA A LA API
   const getUserDatas = async () => {
@@ -34,6 +36,9 @@ const Login = (props: Props) => {
 
 
   //Guardar los usuarios de la API 
+  //Importar el custom hook
+  const userContext = userFornitureContext();
+
   const [user, setUser] = useState ([]);
   
   const [JSONuser, setJSONuser] = useState ([]as Main[]); 
@@ -57,7 +62,8 @@ const Login = (props: Props) => {
       setUser(user);
       // pasar a la siguiente pagina
       navigate("/welcome")
-
+      //el usuario guardado AQUI para exportar
+      userContext.setArray(userFound);
 
     } else {
       alert("Usuario incorrecto. Pruebe de nuevo.");
