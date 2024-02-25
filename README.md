@@ -46,3 +46,12 @@ Pintar productos en componentes card y abrir cada uno detallado en su página.
 Nombre del usuario logeado en el header de la app
 Ruta 404 si se escribe mal una ruta
 Filtrado por categorias
+
+22 febrero
+Rutas protegidas
+Buscar información carrito de la compra
+
+23 febrero
+Busqueda información search y hacer carrito de la compra y hacer el que el menu hamburguesa funcione
+Hacer que funcione error 404
+Añadir alt a imagenes prodcutos

@@ -29,6 +29,7 @@ export default function DisplayCatalogAll({}: Props) {
                   name={product.Name}
                   price={product.Price}
                   highlight={product.Highlight}
+                  class={product.Class}
                   />
                 )}
               )

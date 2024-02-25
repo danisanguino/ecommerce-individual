@@ -36,7 +36,7 @@ export default function AppRoutes({}: Props) {
                 </Route>
           </Routes>
         </BrowserRouter>
-    </AuthProvider>
+  </AuthProvider>
   );
   
 }

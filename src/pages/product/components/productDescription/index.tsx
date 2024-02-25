@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./productDescription.css"
 import { useFornitureContext } from '../../../../context/productContext';
 import { useParams } from 'react-router-dom';
@@ -6,6 +6,8 @@ import { useParams } from 'react-router-dom';
 type Props = {}
 
 export default function ProductDescription({}: Props) {
+
+  const [count, setCount] = useState (1);
 
   const {productId} = useParams()
   
@@ -20,7 +22,7 @@ export default function ProductDescription({}: Props) {
   return (
     <>
     <div className='img-product'>
-      <img src={productShow?.Image} alt="imagen principal" height={"350px"}/>
+      <img src={productShow?.Image} alt={productShow?.Name} height={"350px"}/>
     </div>
 
     <div className="description-product">
@@ -33,6 +35,9 @@ export default function ProductDescription({}: Props) {
 
     <div className='add-cart'>
       <button className='btn-add-cart'><img src="src/assets/cart-btn-icon.svg" alt="comprar" />Añadir a Cesta</button>
+      <button className='btn' onClick={() => setCount ((prevState)=> prevState - 1)}>-</button>
+      <p>{count}</p>
+      <button className='btn'onClick={() => setCount ((prevState)=> prevState + 1)}>+</button>
     </div>
     </>
   )

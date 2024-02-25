@@ -51,6 +51,7 @@ const productsFromArray = useFornitureContext();
                   name={product.Name}
                   price={product.Price}
                   highlight={product.Highlight}
+                  class={product.Class}
                   />
                 )}
               )

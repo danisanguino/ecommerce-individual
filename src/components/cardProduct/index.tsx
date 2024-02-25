@@ -25,7 +25,7 @@ export default function CardProduct(props: Props) {
 
           <div
           className='img-product-thumbnail'>
-          <img src={props.img} alt='silla'/>
+          <img src={props.img} alt={props.name}/>
           </div>
 
           <h4>{props.name}</h4>
