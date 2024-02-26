@@ -6,6 +6,8 @@
     background-size: cover;
     background-position: center;
     display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
     align-items: center;
     color: white;
 }

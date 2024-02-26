@@ -2,12 +2,17 @@ Creación de minisite ecommerce con React.
 
 ![alt text](image.png)
 
+Depencencias npmp
+Hecho con React Vite
+
+Para su funcinamiento:
+pnpm run dev
+
 Campos requeridos
 
 Entrar con un login de usuario con mail y contraseña
 Mostrar catálogo de producto llamado desde una API externa
-Posibilidad de mandar a una wishlist
-Añadir a carrito de la compra
+Añadir a carrito de la compra, calcular cantidades y vaciado.
 
 9 de Febrero
 Creación y aplicaicón clickup.
@@ -43,15 +48,26 @@ Pintar productos en catálogo sin usar el componente aún.
 Pintar productos en componentes card y abrir cada uno detallado en su página.
 
 21 febrero
-Nombre del usuario logeado en el header de la app
-Ruta 404 si se escribe mal una ruta
-Filtrado por categorias
+Nombre del usuario logeado en el header de la app.
+Ruta 404 si se escribe mal una ruta.
+Filtrado por categorias.
 
 22 febrero
-Rutas protegidas
-Buscar información carrito de la compra
+Rutas protegidas.
+Buscar información carrito de la compra.
 
 23 febrero
-Busqueda información search y hacer carrito de la compra y hacer el que el menu hamburguesa funcione
-Hacer que funcione error 404
-Añadir alt a imagenes prodcutos
+Busqueda información search y hacer carrito de la compra y hacer el que el menu hamburguesa funcione.
+Hacer que funcione error 404.
+Añadir alt a imagenes prodcutos.
+
+24 febrero
+Información carrito de la compra y resumen,
+
+25 febrero
+Funcionamiento Resumen añadiendo productos y sumarlos. 
+
+26 febrero
+Suma cantidad productos en resumen y página vaciado de cesta.
+Estilado pagina cesta vacía.
+Estilado botones sumar y restar productos en resumen y en producto.

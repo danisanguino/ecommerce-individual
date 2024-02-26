@@ -3,14 +3,7 @@
     "id": "1",
     "Name": "John",
     "password": "pass123",
-    "cart": [
-      {"id":1,
-        "quatity":1
-      },
-      {"id":4,
-        "quatity":1
-      }
-    ],
+    "cart": [],
     "wishlist": [],
     "email": "john@example.com"
   },

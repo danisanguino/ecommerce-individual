@@ -1,39 +1,80 @@
-import React, { useState } from 'react'
-import "./productCart.css"
+import React, { useState } from "react";
+import "./productCart.css";
 import { CgTrashEmpty } from "react-icons/cg";
+import { Main } from "../../../../interfaces/products";
+import { userFornitureContext } from "../../../../context/user";
 
 type Props = {
-  id: string
-  img: string
-  name: string
-  price: number
-  highlight: boolean
-  class: string
+  product: Main | undefined;
+  count: number;
+  renderPrice: Function;
+};
+
+export default function ProductCart({ product, count, renderPrice }: Props) {
+
+  const [counter, setCounter] = useState(count);
+
+  const userCart = userFornitureContext().array.cart;
+
+  const addToUserCart = () => {
+    setCounter((prevState) => prevState + 1);
+    if (userCart && product) userCart.push(product);
+
+    renderPrice();
+  };
+
+  const removeToUserCart = () => {
+    if (counter > 0) setCounter((prevState) => prevState - 1);
+
+      if (userCart && product) {
+        const index = userCart.findIndex((element) => {
+          element.id === product.id;
+        });
+        userCart.splice(index, 1);
+      }
+    renderPrice();
+  };
+
+  const deleteToUserCart = () => {
+    
+    for (let i = 0; i <= counter; i++) 
+    {
+    removeToUserCart();
+    }
   }
 
-export default function ProductCart(props: Props) {
 
-  const [count, setCount] = useState (1);
 
   return (
-    <div className="product-cart">
-      <div className='resume-product'>
-          <div className="img-resume-product">
-              <img src={props.img}  height={"120px"} alt={props.name}/>
+    <>
+      {counter > 0 && (
+        <div className="product-cart">
+          <div className="resume-product">
+            <div className="img-resume-product">
+              <img src={product?.Image} alt={product?.Name} height={"120px"} />
+            </div>
+            <div className="price-model-product">
+              <h2>{product?.Price} €</h2>
+              <p>{product?.Name} </p>
+              <p>
+                Cant: <strong>{counter}</strong>
+              </p>
+              <span>
+                <button className="btn-product-resume" onClick={removeToUserCart}>-</button>
+              </span>
+              <span>
+                <button className="btn-product-resume" onClick={addToUserCart}>+</button>
+              </span>
+            </div>
           </div>
-          <div className='price-model-product'>
-              <h2>{props.price} €</h2>
-              <p>{props.name} </p>
-              <p>Cant: <strong>{count}</strong></p>
-              <span><button onClick={() => setCount ((prevState)=> prevState - 1)}>-</button></span>
-              <span><button onClick={() => setCount ((prevState)=> prevState + 1)}>+</button></span>
+
+          <div className="delete-product" onClick={deleteToUserCart}>
+            <p>
+              <CgTrashEmpty size={25} />
+            </p>
           </div>
-      </div>
-
-      <div className='delete-product'>
-        <p><CgTrashEmpty /></p>
-      </div>
-
-    </div>
-  )
+        </div>
+      )}
+    </>
+  );
 }

@@ -1,5 +1,5 @@
 import { Navigate, useNavigate } from 'react-router-dom';
-import { Main } from '../../../../interfaces/users';
+import { UserMain } from '../../../../interfaces/users';
 import './login.css';
 import React, { useEffect, useState } from 'react';
 import { userFornitureContext } from '../../../../context/user';
@@ -47,7 +47,7 @@ export const Login = (props: Props) => {
 
   // const [user, setUser] = useState ([]);
   
-  const [JSONuser, setJSONuser] = useState ([]as Main[]); 
+  const [JSONuser, setJSONuser] = useState ([]as UserMain[]); 
 
   const [userData, setUserData] = useState ({mail:"", pass:""});
 
@@ -76,7 +76,7 @@ export const Login = (props: Props) => {
       userContext.setArray(userFound);
 
     } else {
-      alert("Usuario incorrecto. Pruebe de nuevo.");
+      alert("Alguno de los datos está incorrecto. Pruebe de nuevo.");
     }
   };
 

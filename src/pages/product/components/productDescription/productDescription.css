@@ -34,7 +34,7 @@
     padding-bottom: 3.125rem;
 }
 
-.btn-add-cart {
+.add-cart .btn-add-cart {
     background-color: var(--green-secondary);
     border: none;
     font-size: 1.25rem;
@@ -44,4 +44,44 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-cart .btn-add-cart:hover {
+    background-color: var(--green-primary);
+}
+
+.add-cart .btn-add-cart:visited {
+    background-color: var(--green-primary);
+}
+
+.btns-counter {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 0.3rem;
+    margin-left: 0.4rem;
+}
+
+.btns-counter .count-product{
+    font-size: 1.2rem;
+}
+
+.add-cart .btn {
+    background-color: var(--green-secondary);
+    cursor: pointer;
+    height: 2.9rem;
+    width: 2.9rem;
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.add-cart .btn:hover {
+    background-color: var(--green-primary);
+}
+
+.add-cart .btn:visited {
+    background-color: var(--green-primary);
 }

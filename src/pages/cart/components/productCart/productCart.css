@@ -5,6 +5,7 @@
     padding: 0.7rem;
     border: 1px solid var(--grey-secondary);
     margin: 0.5rem 0 0.5rem 0;
+    color: var(--grey-primary);
 }
 
 .product-cart .resume-product {
@@ -17,4 +18,39 @@
     font-size: 1.55rem;
     font-weight: 600;
     padding: 0;
+    color: var(--grey-primary);
+}
+
+.product-cart .btn-product-resume {
+    background-color: var(--green-primary);
+    color: white;
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 0.3rem 0.3rem 0 0;
+    font-size: 1.2rem;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-cart .btn-product-resume:hover {
+    background-color: var(--green-secondary);
+}
+
+.product-cart .btn-product-resume:active {
+    background-color: var(--green-quaternary);
+}
+
+.product-cart .delete-product {
+    cursor: pointer;
+    color: var (--grey-primary);
+}
+
+.product-cart .delete-product:hover {
+    color: var(--green-secondary);
+}
+
+.product-cart .delete-product:active {
+    background-color: var(--green-quaternary);
 }

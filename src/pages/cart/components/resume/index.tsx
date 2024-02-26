@@ -1,58 +1,93 @@
-import React, { useState } from 'react'
-import "./resume.css"
-import ProductCart from '../productCart'
-import { userFornitureContext } from '../../../../context/user'
-import { useFornitureContext } from '../../../../context/productContext'
-import { Main } from '../../../../interfaces/products'
+import React, { useEffect, useState } from "react";
+import "./resume.css";
+import ProductCart from "../productCart";
+import { userFornitureContext } from "../../../../context/user";
+import EmptyCart from "../emptyCart";
 
-type Props = {}
+type Props = {};
+
+type ProductCount = {
+  [productId: number]: number;
+};
 
 export default function Resume({}: Props) {
-
   //Nos traemos los datos de los contextos con las llamadas ya realizadas
-  const productTocart = useFornitureContext();
-  const usersCartProduct = userFornitureContext();
+  const usersCartProduct = userFornitureContext().array.cart;
 
-  const [cartItems, setCartItems] = useState<Main[]>([]);
+  
+  //Suma precio productos
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  const calculateTotalPrice = () => {
+    let price: number = 0;
+    usersCartProduct.map((element) => {
+      price += element.Price;
+    });
+    setTotalPrice(price);
+  };
+
+  useEffect(() => {
+    calculateTotalPrice();
+  }, []);
+
+  const productCount: ProductCount = {};
+  usersCartProduct?.map((item) => {
+    const productId = parseFloat(item.id);
+    productCount[productId] = productCount[productId]
+      ? productCount[productId] + 1
+      : 1;
+  });
 
   return (
-    
-    <div className='resume'>
-    <h2>1 Producto FAKE</h2>
-    <div>
-    {productTocart.array.map((e) => { 
+    <div className="resume">
+      {usersCartProduct.length === 0 && <EmptyCart/>}
+      {usersCartProduct.length>0 && <>
+      <h2>Resumen</h2>
+      <div>
+        {Object.entries(productCount).map(([productId, count]) => {
+          return (
+            <div key={productId}>
+              <ProductCart
+                product={usersCartProduct.find((item) => item.id === productId)}
+                count={count}
+                renderPrice={calculateTotalPrice}
+              />
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="resume-cart">
+        <p>Subtotal</p>{" "}
+        <p>
+          <strong>{totalPrice} €</strong>
+        </p>
+      </div>
+
+      <div className="resume-cart">
+        <p>Envíos</p>{" "}
+        <p>
+          <strong>GRATIS</strong>
+        </p>
+      </div>
+
+      <div className="resume-cart-total">
+        <p>TOTAL A PAGAR</p>
+        <p>
+          <strong>{totalPrice} €</strong>
+        </p>
+      </div>
       
-      return (
-        <ProductCart
-        key={e.id}
-        id={e.id}
-        name={e.Name}
-        price={e.Price} 
+      </>}
+
+      <div className="img-logo-resume">
+        <img
+          src="src/assets/logo-forniture-742-color.svg"
+          alt="forniture 742"
         />
-        )
-      }
-        
-    )}
+      </div>
+    </div>
+
     
-    </div>
-    
-
-    <div className='resume-cart'>
-      <p>Subtotal</p> <p><strong>325 FAKE €</strong></p>
-    </div>
-
-    <div className='resume-cart'>
-      <p>Envíos</p> <p><strong>GRATIS</strong></p>
-    </div>
-
-    <div className='resume-cart-total'>
-      <p>TOTAL A PAGAR</p> <p><strong>325 FAKE €</strong></p>
-    </div>
-
-    <div className='img-logo-resume'>
-      <img src="src/assets/logo-forniture-742-color.svg" alt="forniture 742"/>
-    </div>
-    
-    </div>
-  )
+  );
 }

@@ -2,6 +2,11 @@
     width: 12.5rem;
     position: relative;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.card-product:hover {
+    transform: scale(1.1);
 }
 
 .card-product .img-product-thumbnail {
@@ -11,7 +16,7 @@
 
 .card-product .wish-btn{
     position:absolute;
-    top:0;
+    top: 0;
     right: 5px;
 }
 
