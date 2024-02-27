@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import "./productDescription.css";
 import { useFornitureContext } from "../../../../context/productContext";
-import { Navigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { userFornitureContext } from "../../../../context/user";
+import toast, { Toaster } from 'react-hot-toast';
 
 type Props = {};
 
 export default function ProductDescription({}: Props) {
   const [count, setCount] = useState(1);
+
+  const navigate = useNavigate();
 
   const { productId } = useParams();
 
@@ -26,8 +29,29 @@ export default function ProductDescription({}: Props) {
     }
   };
 
+  const goToCart = () => {
+    toast.success('Añadido a cesta!')
+
+    setTimeout(() => {
+      navigate("/cart")
+    }, 1000);
+    
+  };
+
+  const onlyToastSum = () => {
+    toast.success('Añadido correctamente!')
+  }
+
+  const onlyToastDel = () => {
+    toast.success('Quitado correctamente!')
+  }
+
   return (
     <>
+      <Toaster
+        position="bottom-center"
+        reverseOrder={false}/>
+
       <div className="img-product">
         <img
           src={productShow?.Image}
@@ -53,20 +77,27 @@ export default function ProductDescription({}: Props) {
       <div className="add-cart">
         <button className="btn-add-cart" onClick={() =>{
           includeProductInUserArray();
-          // Navigate("/cart");
+          goToCart();
           }}>
+
           <img src="src/assets/cart-btn-icon.svg" alt="comprar" />
           Añadir a Cesta
         </button>
         
       <div className="btns-counter">
             <button
-              className="btn" onClick={() => setCount((prevState) => prevState - 1)}>
+              className="btn" onClick={() => {
+                setCount((prevState) => prevState - 1)
+                onlyToastDel();}
+                }>
               -
             </button>
             <p className="count-product">{count}</p>
             <button
-              className="btn" onClick={() => setCount((prevState) => prevState + 1)}>
+              className="btn" onClick={() => {
+                setCount((prevState) => prevState + 1)
+                onlyToastSum();}
+                }>
               +
             </button>
         </div>

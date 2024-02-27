@@ -3,6 +3,7 @@ import "./productCart.css";
 import { CgTrashEmpty } from "react-icons/cg";
 import { Main } from "../../../../interfaces/products";
 import { userFornitureContext } from "../../../../context/user";
+import toast, { Toaster } from 'react-hot-toast';
 
 type Props = {
   product: Main | undefined;
@@ -43,10 +44,22 @@ export default function ProductCart({ product, count, renderPrice }: Props) {
     }
   }
 
+  const onlyToastSum = () => {
+    toast.success('Añadido correctamente!')
+  }
 
+  const onlyToastDel = () => {
+    toast.success('Quitado correctamente!')
+  }
+
+  const emptyCart = () => {
+    toast.success('Cesta vaciada!')
+  }
 
   return (
     <>
+    <Toaster/>
+
       {counter > 0 && (
         <div className="product-cart">
           <div className="resume-product">
@@ -60,15 +73,34 @@ export default function ProductCart({ product, count, renderPrice }: Props) {
                 Cant: <strong>{counter}</strong>
               </p>
               <span>
-                <button className="btn-product-resume" onClick={removeToUserCart}>-</button>
+                <button className="btn-product-resume" onClick={() => {
+                  removeToUserCart();
+                  onlyToastDel();
+                  }
+                }
+                >
+                -
+                </button>
               </span>
               <span>
-                <button className="btn-product-resume" onClick={addToUserCart}>+</button>
+                <button className="btn-product-resume" onClick={() => {
+                  addToUserCart();
+                  onlyToastSum();
+                  }
+                }
+                >
+                +
+                </button>
               </span>
             </div>
           </div>
 
-          <div className="delete-product" onClick={deleteToUserCart}>
+          <div className="delete-product" onClick={()=>{
+            deleteToUserCart();
+            emptyCart();
+            }
+          }
+            >
             <p>
               <CgTrashEmpty size={25} />
             </p>

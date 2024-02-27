@@ -5,6 +5,8 @@ Creación de minisite ecommerce con React.
 Depencencias npmp
 Hecho con React Vite
 
+Instalar todo.
+
 Para su funcinamiento:
 pnpm run dev
 
@@ -17,6 +19,7 @@ Añadir a carrito de la compra, calcular cantidades y vaciado.
 9 de Febrero
 Creación y aplicaicón clickup.
 Diseño en figma de los 5 pantallazos.
+Vinculación con la cuenta de GITHUB 
 
 11 de febrero
 Maquetación login page.
@@ -71,3 +74,8 @@ Funcionamiento Resumen añadiendo productos y sumarlos.
 Suma cantidad productos en resumen y página vaciado de cesta.
 Estilado pagina cesta vacía.
 Estilado botones sumar y restar productos en resumen y en producto.
+Añadir Toaster "Productos añadidos o quitados perfectamente"
+
+27 febrero
+Subida final a GITHUB
+Preparación de presentacion
