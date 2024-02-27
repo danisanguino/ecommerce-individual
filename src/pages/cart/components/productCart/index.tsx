@@ -53,7 +53,7 @@ export default function ProductCart({ product, count, renderPrice }: Props) {
   }
 
   const emptyCart = () => {
-    toast.success('Cesta vaciada!')
+    toast.success('Producto vaciado correctamente!')
   }
 
   return (
