@@ -87,7 +87,7 @@ export default function ProductDescription({}: Props) {
       <div className="btns-counter">
             <button
               className="btn" onClick={() => {
-                setCount((prevState) => prevState - 1)
+                if (count > 0) setCount((prevState) => prevState - 1);
                 onlyToastDel();}
                 }>
               -
