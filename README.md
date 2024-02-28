@@ -1,16 +1,16 @@
-Ecommerce app creation with React.
+<h1>Ecommerce app creation with React.</h2>
 Welcome to Forniture 742, exclusive app for mobiles and tablets.
 Mini ecommerce where the user, once logged in, has access to a catalogue where he can choose products and add them to a shopping cart.
 
-<img src="/Users/danielsanguino/Desktop/ASSEMBLER/ecommerce/ecommerce-project/src/assets/readme-formiture742.jpg"/>
+[Welcome to Forniture 742](src/assets/readme-formiture742.jpg)
 
 
-<h1>Technology</h1>
+<h2>Technology</h2>
 npmp dependencies
 React Vite
 
 
-<h1>To watch</h1>.
+<h2>To watch</h2>
 To run:
 pnpm run dev
 
@@ -22,7 +22,7 @@ Required fields
 </ul>
 
 
-<h1>Diary</h1>.
+<h2>Diary</h2>
 Day 1: 9 February
 Creation and implementation of clickup.
 Design in figma of the 5 screenshots.
@@ -92,7 +92,7 @@ Day 18: 28th February
 Clean up code
 Record video
 
-<h1>Difficulty project:</h1>
+<h2>Difficulty project:</h2>
 Make a user login by comparing it with an external JSON.
 Adding and deleting items to a basket.
 Calculate subtracting and adding the price.
