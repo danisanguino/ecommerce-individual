@@ -2,7 +2,7 @@
 Welcome to Forniture 742, exclusive app for mobiles and tablets.
 Mini ecommerce where the user, once logged in, has access to a catalogue where he can choose products and add them to a shopping cart.
 
-[Welcome to Forniture 742](src/assets/readme-formiture742.jpg)
+![Welcome to Forniture 742](src/assets/readme-formiture742.jpg)
 
 
 <h2>Technology</h2>
@@ -11,7 +11,6 @@ React Vite
 
 
 <h2>To watch</h2>
-To run:
 pnpm run dev
 
 Required fields
