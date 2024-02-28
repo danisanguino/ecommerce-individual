@@ -48,9 +48,7 @@ export default function ProductDescription({}: Props) {
 
   return (
     <>
-      <Toaster
-        position="bottom-center"
-        reverseOrder={false}/>
+      <Toaster/>
 
       <div className="img-product">
         <img
