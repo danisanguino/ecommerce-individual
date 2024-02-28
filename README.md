@@ -2,7 +2,7 @@ Ecommerce app creation with React.
 Welcome to Forniture 742, exclusive app for mobiles and tablets.
 Mini ecommerce where the user, once logged in, has access to a catalogue where he can choose products and add them to a shopping cart.
 
-<img src="/Users/danielsanguino/Desktop/ASSEMBLER/ecommerce/ecommerce-project/src/assets/readme-formiture742.jpg">
+<img src="/Users/danielsanguino/Desktop/ASSEMBLER/ecommerce/ecommerce-project/src/assets/readme-formiture742.jpg"/>
 
 
 <h1>Technology</h1>
