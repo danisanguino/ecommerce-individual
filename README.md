@@ -2,12 +2,15 @@
 Welcome to Forniture 742, exclusive app for mobiles and tablets.
 Mini ecommerce where the user, once logged in, has access to a catalogue where he can choose products and add them to a shopping cart.
 
-![Welcome to Forniture 742](src/assets/readme-formiture742.jpg)
+
+![Welcome to Forniture 742](https://github.com/danisanguino/ecommerce-individual/blob/main/src/assets/readme-formiture742.jpg)
 
 
 <h2>Technology</h2>
-npmp dependencies
-React Vite
+<ul>
+<li>npmp dependencies</li>
+<li>React Vite</li>
+</ul>
 
 
 <h2>To watch</h2>
@@ -15,8 +18,8 @@ pnpm run dev
 
 Required fields
 <ul>
-<li>Log in with a user login with email and password</li>.
-<li>Display product catalogue called from an external API.
+<li>Log in with a user login with email and password.</li>
+<li>Display product catalogue called from an external API.</li>
 <li>Add to shopping cart, calculate quantities and empty </li>.
 </ul>
 
@@ -88,11 +91,13 @@ Preparation of presentation.
 Video recording.
 
 Day 18: 28th February
-Clean up code
-Record video
+Clean up code.
+Record video.
 
 <h2>Difficulty project:</h2>
-Make a user login by comparing it with an external JSON.
-Adding and deleting items to a basket.
-Calculate subtracting and adding the price.
-Emptying a basket.
+<ul>
+<li>Make a user login by comparing it with an external JSON.</li>
+<li>Adding and deleting items to a basket.</li>
+<li>Calculate subtracting and adding the price.</li>
+<li>Emptying a basket.</li>
+</ul>
