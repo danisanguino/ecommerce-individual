@@ -20,7 +20,7 @@ Required fields
 <ul>
 <li>Log in with a user login with email and password.</li>
 <li>Display product catalogue called from an external API.</li>
-<li>Add to shopping cart, calculate quantities and empty </li>.
+<li>Add to shopping cart, calculate quantities and empty. </li>
 </ul>
 
 
