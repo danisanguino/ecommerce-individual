@@ -20,7 +20,7 @@ export default function ProductDescription({}: Props) {
     return element.id === productId;
   });
 
-  //Acceder a los usuarios
+  //Acces to context
   const userFromContext = userFornitureContext().array;
 
   const includeProductInUserArray = () => {

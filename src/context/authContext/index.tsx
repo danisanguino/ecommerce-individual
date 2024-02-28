@@ -1,11 +1,10 @@
 import { createContext, useContext, useReducer } from "react";
 
-//Crear intefaz
+
 interface AuthStates {
     isAuthenticated: boolean
 };
 
-//Crear 2 tipos
 
 type Action = {
     type: "LOGGIN"
@@ -13,12 +12,12 @@ type Action = {
     type: "LOGOUT"
 };
 
-//el otro tipo
+
 type Dispatch = (
     action: Action
 ) => void;
 
-//Crear 2 contextos
+
 const AuthStateContext = createContext<AuthStates | undefined>(undefined);
 
 const AuthDispatchContext = createContext<Dispatch | undefined>(undefined);
@@ -36,7 +35,7 @@ const authReducer = (state:AuthStates, action:Action): AuthStates => {
 
 }
 
-//Creamos el Provider
+//Provider
 const AuthProvider = ({children}:{children:React.ReactNode}) => {
     const [state, dispatch] = useReducer(authReducer, {isAuthenticated: false});
     return <AuthStateContext.Provider value={state}>
@@ -47,7 +46,7 @@ const AuthProvider = ({children}:{children:React.ReactNode}) => {
 }
 
 
-//Usar el usecontext
+//Use the useContext
 const useAuthState = () => {
     const context = useContext (AuthStateContext);
     if (context === undefined) {

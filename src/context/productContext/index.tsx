@@ -7,10 +7,10 @@ export interface ProductContextType {
   setArray: Function 
 }
 
-//Creado contexto
+//Contexto
 const products = createContext({} as ProductContextType);
 
-//Creado provider, qda array con producto y un metodo para setear el array con el que abrazaremos a los componentes
+//Provider
 export const ProductsContextProvider = () => {
 
   const [array, setArray] = useState([])
@@ -22,7 +22,7 @@ export const ProductsContextProvider = () => {
   )
 }
 
-// Crear el custom hook para poder usar el contexto en el componente que quieras
+// Custom hook to use the Context
 export const useFornitureContext = () => {
 
     const context = useContext(products)

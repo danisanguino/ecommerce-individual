@@ -10,23 +10,22 @@ type Props = {};
 export const Login = (props: Props) => {
 
 
-  //LLAMADA A LA API
+  //API CALL
   const getUserDatas = async () => {
     try {
-      //fetch a la api
+      //FETCH
       const request = await fetch("src/data/users.json");
       const JSONrequest = await request.json();
       
-      //Devolver todos los datos
+      //RETURN DATA
       return JSONrequest
     
-    //Cierre del try
     } catch (error) {
       console.log(error);
     }
   };
 
-  // Usar useEffect para recuperarlo que se ejecute una sola vez después de que el componente se monte
+  
   useEffect(() => {
     const getUserDatasResponse = async () => {
       const userDatasResponse = await getUserDatas()
@@ -41,11 +40,9 @@ export const Login = (props: Props) => {
   }
 
 
-  //Guardar los usuarios de la API 
-  //Importar el custom hook
+ 
+  //Custom hook CONTEXT
   const userContext = userFornitureContext();
-
-  // const [user, setUser] = useState ([]);
   
   const [JSONuser, setJSONuser] = useState ([]as UserMain[]); 
 
@@ -53,26 +50,22 @@ export const Login = (props: Props) => {
 
   const dispatch = useAuthDispatch();
 
-  //llamar al useNavigate
   const navigate = useNavigate();
 
-  // Obtener datos formulario
+  // Data from form
   const loginForm = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // const userDatas = e.target; // coge los datos del evento que en este caso es un formulario
-    // const mailUser = userDatas.mail.value;
-    // const passUser = userDatas.pass.value;
 
     const {mail, pass} = userData
 
-    //Coge los datos del JSON y 
+    //Variable to found user
     const userFound = JSONuser.find((element) => element.email === mail && element.password === pass)
 
 
-    // Comparar 
+    // Compare users 
     if (userFound) {
       handleLogin();
-      //el usuario guardado AQUI para exportar
+      //User to export
       userContext.setArray(userFound);
 
     } else {

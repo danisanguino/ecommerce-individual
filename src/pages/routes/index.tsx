@@ -19,22 +19,21 @@ export default function AppRoutes({}: Props) {
   return (
   <AuthProvider>
     <BrowserRouter>
-          <Routes>
-                <Route element={<UserContextProvider/>}>
-                    <Route path="/" element={<Signin/>} />
-                          <Route element={<ProductsContextProvider/>}>
-                                    <Route path="/welcome" element={<ProtectedRoutes component={WelcomePage}/>}/>
-                                    <Route path="/catalogAll" element={<ProtectedRoutes component={DisplayCatalogAll}/>}/>
-                                    <Route path="/catalogChairs" element={<ProtectedRoutes component={DisplayCatalogChairs}/>}/>
-                                    <Route path="/catalogFurnitures" element={<ProtectedRoutes component={DisplayCatalogFurnitures}/>}/>
-                                    <Route path="/catalogTables" element={<ProtectedRoutes component={DisplayCatalogTables}/>}/>
-                                    <Route path="/:productId" element={<ProtectedRoutes component={Product}/>}/>
-                                    <Route path="/cart" element={<ProtectedRoutes component={Cart}/>}/>
-                                    {/* Ver este path que no funciona */}
-                                    <Route path="*" element={<Navigate replace to="/login"/>} />
-                          </Route>
-                </Route>
-          </Routes>
+            <Routes>
+                  <Route element={<UserContextProvider/>}>
+                        <Route path="/" element={<Signin/>} />
+                              <Route element={<ProductsContextProvider/>}>
+                                          <Route path="/welcome" element={<ProtectedRoutes component={WelcomePage}/>}/>
+                                          <Route path="/catalogAll" element={<ProtectedRoutes component={DisplayCatalogAll}/>}/>
+                                          <Route path="/catalogChairs" element={<ProtectedRoutes component={DisplayCatalogChairs}/>}/>
+                                          <Route path="/catalogFurnitures" element={<ProtectedRoutes component={DisplayCatalogFurnitures}/>}/>
+                                          <Route path="/catalogTables" element={<ProtectedRoutes component={DisplayCatalogTables}/>}/>
+                                          <Route path="/:productId" element={<ProtectedRoutes component={Product}/>}/>
+                                          <Route path="/cart" element={<ProtectedRoutes component={Cart}/>}/>
+                                          <Route path="*" element={<Navigate replace to="/login"/>} />
+                              </Route>
+                  </Route>
+            </Routes>
         </BrowserRouter>
   </AuthProvider>
   );

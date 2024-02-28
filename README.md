@@ -79,3 +79,8 @@ Añadir Toaster "Productos añadidos o quitados perfectamente".
 27 febrero
 Subida final a GITHUB.
 Preparación de presentacion.
+Grabación video
+
+28febrero
+Limpiar código
+Grabar video

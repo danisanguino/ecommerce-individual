@@ -7,10 +7,10 @@ export interface UserContextType {
   setArray: Function;
 }
 
-//Creando contexto
+//Contexto
 const users = createContext({} as UserContextType);
 
-//Creando el provider
+//Provider
 export const UserContextProvider = () => {
   const [array, setArray] = useState({} as UserMain);
 
@@ -19,7 +19,7 @@ export const UserContextProvider = () => {
   );
 };
 
-// Crear el custom hook para poder usar el contexto en el componente que quieras
+// Custom hook to use th context
 export const userFornitureContext = () => {
   const context = useContext(users);
   if (!context) {

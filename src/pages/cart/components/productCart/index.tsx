@@ -29,7 +29,7 @@ export default function ProductCart({ product, count, renderPrice }: Props) {
 
       if (userCart && product) {
         const index = userCart.findIndex((element) => {
-          element.id === product.id;
+        return element.id === product.id;
         });
         userCart.splice(index, 1);
       }

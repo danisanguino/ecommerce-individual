@@ -10,14 +10,13 @@ export default function Featured({}: Props) {
 const productsFromArray = useFornitureContext();
 
 
- // Función LLamar async await
+ // CALL API
  const getProductsData = async () => {
    try {
      const request = await fetch("src/data/products.json");
      const JSONrequest = await request.json();
 
      productsFromArray.setArray(JSONrequest);
-
 
    } catch (error) {
      console.log("Message: " + error);

@@ -11,11 +11,11 @@ type ProductCount = {
 };
 
 export default function Resume({}: Props) {
-  //Nos traemos los datos de los contextos con las llamadas ya realizadas
+  //User Context 
   const usersCartProduct = userFornitureContext().array.cart;
 
-  
-  //Suma precio productos
+
+  //Adding up prices
   const [totalPrice, setTotalPrice] = useState(0);
 
   const calculateTotalPrice = () => {

@@ -1,5 +1,3 @@
-// import { Component } from "react";
-
 import { Navigate } from "react-router-dom";
 import { useAuthState } from "../context/authContext"
 
