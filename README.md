@@ -1,86 +1,99 @@
-Creación app ecommerce con React.
+Ecommerce app creation with React.
+Welcome to Forniture 742, exclusive app for mobiles and tablets.
+Mini ecommerce where the user, once logged in, has access to a catalogue where he can choose products and add them to a shopping cart.
 
-![alt text](image.png)
+<img src="/Users/danielsanguino/Desktop/ASSEMBLER/ecommerce/ecommerce-project/src/assets/readme-formiture742.jpg">
 
-Depencencias npmp
-Hecho con React Vite
 
-Instalar todo.
+<h1>Technology</h1>
+npmp dependencies
+React Vite
 
-Para su funcionamiento:
+
+<h1>To watch</h1>.
+To run:
 pnpm run dev
 
-Campos requeridos
+Required fields
+<ul>
+<li>Log in with a user login with email and password</li>.
+<li>Display product catalogue called from an external API.
+<li>Add to shopping cart, calculate quantities and empty </li>.
+</ul>
 
-Entrar con un login de usuario con mail y contraseña
-Mostrar catálogo de producto llamado desde una API externa
-Añadir a carrito de la compra, calcular cantidades y vaciado.
 
-9 de Febrero
-Creación y aplicación clickup.
-Diseño en figma de los 5 pantallazos.
-Vinculación con la cuenta de GITHUB 
+<h1>Diary</h1>.
+Day 1: 9 February
+Creation and implementation of clickup.
+Design in figma of the 5 screenshots.
+Linking with the GITHUB account.
 
-11 de febrero
-Maquetación login page.
+Day 2: 11 February
+Login page layout.
 
-12 febrero
-Recoger datos de formulario y llamada a la API de usuarios
+Day 3: 12 February
+Collect form data and call to the user API.
 
-13 febrero
-Validación de formulario.
-Aprendizaje react routing 6.
+Day 4: 13 February
+Form validation.
+Learning react routing 6.
 
-14 febrero 
-Maquetación de las página de welcome, catálogo, producto y cesta.
+Day 5: 14 February
+Layout of the welcome, catalogue, product and basket pages.
 
-15 febrero 
-Routering entre todas las páginas y programar los botones de la app.
+Day 6: Day 6: 15 February
+Routering between all the pages and programming the app buttons.
 
-16 febrero
-Ver el useContext aplicado al usuario registrado y pintarlo en el header.
+Day 7: 16 February
+View the useContext applied to the registered user and paint it on the header.
 
-18 febrero.
-Arreglar la app caída por la mañana al implementar useContext
+Day 8: 18 February.
+Fix the app crashing in the morning when implementing useContext.
 
-19 febrero.
-Ver el useContext aplicado al usuario registrado y pintarlo en el header.
-Pintar productos en catálogo sin usar el componente aún.
+Day 9: 19 February.
+View the useContext applied to the registered user and paint it in the header.
+Paint products in catalogue without using the component yet.
 
-20 febrero
-Pintar productos en componentes card y abrir cada uno detallado en su página.
+Day 10: 20 February
+Paint products on card components and open each one detailed on its page.
 
-21 febrero
-Nombre del usuario logeado en el header de la app.
-Ruta 404 si se escribe mal una ruta.
-Filtrado por categorías.
+Day 11: 21 February
+Name of the logged in user in the header of the app.
+Path 404 if a path is misspelled.
+Filtering by categories.
 
-22 febrero
-Rutas protegidas.
-Buscar información carrito de la compra.
+Day 12: 22 February
+Protected routes.
+Search for information shopping trolley.
 
-23 febrero
-Búsqueda información search y hacer carrito de la compra y hacer el que el menú hamburguesa funcione.
-Hacer que funcione error 404.
-Añadir alt a imágenes productos.
+Day 13: 23 February
+Search information search and make shopping cart and make hamburger menu work.
+Make 404 error work.
+Add alt to product images.
 
-24 febrero
-Información carrito de la compra y resumen.
+Day 14: 24 February
+Shopping cart information and summary.
 
-25 febrero
-Funcionamiento Resumen añadiendo productos y sumarlos. 
+Day 15: 25 February
+Working summary adding products and adding them.
 
-26 febrero
-Suma cantidad productos en resumen y página vaciado de cesta.
-Estilado página cesta vacía.
-Estilado botones sumar y restar productos en resumen y en producto.
-Añadir Toaster "Productos añadidos o quitados perfectamente".
+Day 16: 26 February
+Sum up products in summary and empty basket page.
+Styled empty basket page.
+Styling buttons add and subtract products in summary and in product.
+Add Toaster "Products added or removed perfectly".
 
-27 febrero
-Subida final a GITHUB.
-Preparación de presentacion.
-Grabación video
+Day 17: 27 February
+Final upload to GITHUB.
+Preparation of presentation.
+Video recording.
 
-28febrero
-Limpiar código
-Grabar video
+Day 18: 28th February
+Clean up code
+Record video
+
+<h1>Difficulty project:</h1>
+Make a user login by comparing it with an external JSON.
+Adding and deleting items to a basket.
+Calculate subtracting and adding the price.
+Emptying a basket.
