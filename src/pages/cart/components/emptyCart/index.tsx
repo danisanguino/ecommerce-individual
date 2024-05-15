@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { MdOutlineRemoveShoppingCart } from "react-icons/md";
 import "./emptyCart.css"
 

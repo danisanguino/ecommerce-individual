@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./resume.css";
 import ProductCart from "../productCart";
 import { userFornitureContext } from "../../../../context/user";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./productDescription.css";
 import { useFornitureContext } from "../../../../context/productContext";
 import { useNavigate, useParams } from "react-router-dom";
@@ -16,7 +16,7 @@ export default function ProductDescription({}: Props) {
 
   const productsFromArray = useFornitureContext();
 
-  const productShow = productsFromArray.array.find((element) => {
+  const productShow: any = productsFromArray.array.find((element) => {
     return element.id === productId;
   });
 

@@ -1,13 +1,12 @@
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { UserMain } from '../../../../interfaces/users';
 import './login.css';
 import React, { useEffect, useState } from 'react';
 import { userFornitureContext } from '../../../../context/user';
 import { useAuthDispatch } from '../../../../context/authContext';
 
-type Props = {};
 
-export const Login = (props: Props) => {
+export const Login = () => {
 
 
   //API CALL

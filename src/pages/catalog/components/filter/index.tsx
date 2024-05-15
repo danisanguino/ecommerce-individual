@@ -1,7 +1,7 @@
-import React from 'react'
+
 import "./filter.css"
-import { Link, Navigate } from 'react-router-dom'
-import DisplayCatalogChairs from '../displayCatalogChairs'
+import { Link } from 'react-router-dom'
+
 
 type Props = {}
 

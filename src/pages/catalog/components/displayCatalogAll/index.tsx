@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+
 import "../../../welcomepage/components/featured/featured.css";
 import Filter from '../filter';
 import CardProduct from '../../../../components/cardProduct';
-import { Main } from '../../../../interfaces/products';
+
 import { useFornitureContext } from '../../../../context/productContext';
 import Header from '../../../../components/Header';
 import Footer from '../../../../components/footer';

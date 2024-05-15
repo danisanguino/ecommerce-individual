@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import "./featured.css"
 import CardProduct from '../../../../components/cardProduct'
 import { useFornitureContext } from '../../../../context/productContext'

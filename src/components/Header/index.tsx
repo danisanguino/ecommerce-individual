@@ -1,4 +1,3 @@
-import { useContext } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
 import { userFornitureContext } from '../../context/user';

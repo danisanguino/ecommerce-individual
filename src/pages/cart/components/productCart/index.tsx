@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./productCart.css";
 import { CgTrashEmpty } from "react-icons/cg";
 import { Main } from "../../../../interfaces/products";

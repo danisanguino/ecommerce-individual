@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+
 import "../../../welcomepage/components/featured/featured.css";
 import Filter from '../filter';
 import CardProduct from '../../../../components/cardProduct';
