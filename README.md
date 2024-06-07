@@ -1,6 +1,10 @@
-<h1>Ecommerce app creation with React.</h2>
-Welcome to Forniture 742, exclusive app for mobiles and tablets.
-Mini ecommerce where the user, once logged in, has access to a catalogue where he can choose products and add them to a shopping cart.
+`#react` `#vite` `#CSS` `#ecommerce`
+
+<h1>🛋️ Ecommerce app Forniture 742.</h1>
+Welcome to Forniture 742, an exclusive app for mobiles and tablets.
+A mini ecommerce where the user, once logged in, has access to a catalog where they can choose products and add them to a shopping cart.
+
+Additionally, this app is built with React and Vite, with content attached via JSON.
 
 
 ![Welcome to Forniture 742](https://github.com/danisanguino/ecommerce-individual/blob/main/src/assets/readme-formiture742.jpg)
