@@ -7,7 +7,7 @@ A mini ecommerce where the user, once logged in, has access to a catalog where t
 Additionally, this app is built with React and Vite, with content attached via JSON.
 
 
-![Welcome to Forniture 742](https://github.com/danisanguino/ecommerce-individual/blob/main/src/assets/readme-formiture742.jpg)
+![Welcome to Forniture 742](https://github.com/danisanguino/ecommerce-individual/blob/main/src/assets/readme-formiture742-B.jpg)
 
 
 <h2>Technology</h2>
