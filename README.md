@@ -28,7 +28,7 @@ Required fields
 </ul>
 
 
-<h2>Diary</h2>
+<h2>📅 Diary</h2>
 Day 1: 9 February
 Creation and implementation of clickup.
 Design in figma of the 5 screenshots.
