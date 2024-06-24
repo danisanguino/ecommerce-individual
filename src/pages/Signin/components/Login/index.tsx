@@ -13,7 +13,7 @@ export const Login = () => {
   const getUserDatas = async () => {
     try {
       //FETCH
-      const request = await fetch("src/data/users.json");
+      const request = await fetch("public/data/users.json");
       const JSONrequest = await request.json();
       
       //RETURN DATA
@@ -86,7 +86,7 @@ export const Login = () => {
       </form>
 
       <div className='img-logo'>
-        <img src="src/assets/logo-742.svg" alt="Logo" />
+        <img src="public/assets/logo-742.svg" alt="Logo" />
       </div>
 
     </div>

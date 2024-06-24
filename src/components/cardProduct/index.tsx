@@ -19,7 +19,7 @@ export default function CardProduct(props: Props) {
 
           <div
           className='wish-btn'>
-          <img src="src/assets/wish-product-icon.svg" />
+          <img src="public/assets/wish-product-icon.svg" />
           </div>
 
           <div

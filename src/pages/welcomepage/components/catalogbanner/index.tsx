@@ -9,7 +9,7 @@ export default function CatalogBanner({}: Props) {
       
       <div className='welcome-txt-btn'>
         <h1>Sorpréndete</h1>
-        <Link to="/catalogAll"><button>Catalogo</button></Link>
+        <Link to="/catalogAll"><button>Catálogo</button></Link>
     </div>
 
     </div>

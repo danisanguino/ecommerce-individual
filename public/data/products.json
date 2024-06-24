@@ -8,7 +8,7 @@
     "Price": 250,
     "Meassures": "Ancho 46 cm, Alto 82 cm, Fondo 52 cm",
     "Material": "Plástico y madera",
-    "Image": "src/assets/products/silla-01-forniture.webp"
+    "Image": "public/assets/products/silla-01-forniture.webp"
     },
 
     {
@@ -20,7 +20,7 @@
     "Price": 425,
     "Meassures": "Ancho 55 cm, Alto 51 cm, Fondo 54 cm",
     "Material": "Terciopelo y metal",
-    "Image": "src/assets/products/silla-02-forniture.webp"
+    "Image": "public/assets/products/silla-02-forniture.webp"
     },
 
     {
@@ -32,7 +32,7 @@
     "Price": 475,
     "Meassures": "Ancho 43 cm, Alto 46 cm, Fondo 30 cm",
     "Material": "Madera",
-    "Image": "src/assets/products/mesa-01-forniture.webp"
+    "Image": "public/assets/products/mesa-01-forniture.webp"
     },
 
     {
@@ -44,7 +44,7 @@
     "Price": 300,
     "Meassures": "Ancho 100 cm, Alto 112 cm, Fondo 74 cm",
     "Material": "Madera",
-    "Image": "src/assets/products/mesa-02-forniture.webp"
+    "Image": "public/assets/products/mesa-02-forniture.webp"
     },
 
     {
@@ -56,7 +56,7 @@
     "Price": 550,
     "Meassures": "Ancho 80 cm, Alto 140 cm, Fondo 40 cm",
     "Material": "Madera",
-    "Image": "src/assets/products/mueble-01-forniture.webp"
+    "Image": "public/assets/products/mueble-01-forniture.webp"
     },
 
     {
@@ -68,6 +68,6 @@
     "Price": 715,
     "Meassures": "Ancho 103 cm, Alto 80 cm, Fondo 40 cm",
     "Material": "Madera",
-    "Image": "src/assets/products/mueble-02-forniture.webp"
+    "Image": "public/assets/products/mueble-02-forniture.webp"
     }
 ]
