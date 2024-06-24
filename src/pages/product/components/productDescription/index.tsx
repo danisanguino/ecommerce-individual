@@ -78,7 +78,7 @@ export default function ProductDescription({}: Props) {
           goToCart();
           }}>
 
-          <img src="public/assets/cart-btn-icon.svg" alt="comprar" />
+          <img src="./assets/cart-btn-icon.svg" alt="comprar" />
           Añadir a Cesta
         </button>
         

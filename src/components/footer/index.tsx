@@ -14,12 +14,12 @@ export default function Footer({}: Props) {
     <div className='footer'>
 
       <div className="back-btn" onClick={backBtn}  >
-        <img src="public/assets/back-icon.svg" alt="back"/>
+        <img src="./assets/back-icon.svg" alt="back"/>
       </div>
 
       <div className='wish-cart-btn'>
-        <img src="public/assets/wish-footer-icon.svg" alt="wish list"/>
-        <Link to="/cart"><img src="public/assets/cart-footer-icon.svg" alt="cart"/></Link>
+        <img src="./assets/wish-footer-icon.svg" alt="wish list"/>
+        <Link to="/cart"><img src="./assets/cart-footer-icon.svg" alt="cart"/></Link>
       </div>
 
     </div>

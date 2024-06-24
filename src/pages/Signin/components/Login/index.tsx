@@ -13,7 +13,7 @@ export const Login = () => {
   const getUserDatas = async () => {
     try {
       //FETCH
-      const request = await fetch("public/data/users.json");
+      const request = await fetch("./data/users.json");
       const JSONrequest = await request.json();
       
       //RETURN DATA
