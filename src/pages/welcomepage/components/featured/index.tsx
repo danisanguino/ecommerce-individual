@@ -13,7 +13,7 @@ const productsFromArray = useFornitureContext();
  // CALL API
  const getProductsData = async () => {
    try {
-     const request = await fetch("public/data/products.json");
+     const request = await fetch("./data/products.json");
      const JSONrequest = await request.json();
 
      productsFromArray.setArray(JSONrequest);

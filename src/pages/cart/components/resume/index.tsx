@@ -82,7 +82,7 @@ export default function Resume({}: Props) {
 
       <div className="img-logo-resume">
         <img
-          src="public/assets/logo-forniture-742-color.svg"
+          src="./assets/logo-forniture-742-color.svg"
           alt="forniture 742"
         />
       </div>
