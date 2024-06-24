@@ -86,7 +86,7 @@ export const Login = () => {
       </form>
 
       <div className='img-logo'>
-        <img src="./logo-742.svg" alt="Logo" />
+        <img src="./assets/logo-742.svg" alt="Logo" />
       </div>
 
     </div>
