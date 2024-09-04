@@ -84,7 +84,7 @@ export const Login = () => {
         <input type="password" name="pass" placeholder='Password' className="pass-icon" onChange={(e)=> setUserData({...userData, pass:e.target.value})} value={userData.pass} required />
         <button type="submit" className="button">Entrar</button>
       </form>
-
+      <p><b>LOGIN</b></p><p><b>user:</b> john@example.com </p><p><b>pass:</b> pass123</p>
       <div className='img-logo'>
         <img src="./assets/logo-742.svg" alt="Logo" />
       </div>
